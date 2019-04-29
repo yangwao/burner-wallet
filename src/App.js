@@ -57,7 +57,7 @@ const EthCrypto = require('eth-crypto');
 //const POA_XDAI_NODE = "https://dai-b.poa.network"
 const POA_XDAI_NODE = "https://dai.poa.network"
 
-let emojis = ["🔥","❤️","🎉","🙏","🍑","💪","💩","👌"]
+let emojis = ["🔥","❤️","🎉"]
 
 let XDAI_PROVIDER = POA_XDAI_NODE
 
@@ -1348,7 +1348,7 @@ render() {
             selected = ERC20NAME
             extraTokens = (
               <div>
-                <Balance icon={"🤑"} mainStyle={mainStyle} selected={"emojicoin.exchange"} text={"emojicoin.exchange"} amount={this.state.balance} address={account} dollarDisplay={dollarDisplay} />
+                <Balance icon={"📍"} mainStyle={mainStyle} selected={"emojicoin.exchange"} text={"emojicoin.exchange"} amount={this.state.balance} address={account} dollarDisplay={dollarDisplay} />
                 <Ruler/>
               </div>
             )
@@ -1443,8 +1443,10 @@ render() {
 
                 {extraTokens}
 
+                {
 
-                <div style={{width:"100%",padding:"5%",textAlign:'center',fontSize:22}}>
+                }
+                {/* <div style={{width:"100%",padding:"5%",textAlign:'center',fontSize:22}}>
                    Thanks for playing! Game Over!
                   <div>(<a href="https://medium.com/gitcoin/emojicoin-exchange-53f9658c9e3b">read the full story here</a>)</div>
                 </div>
@@ -1454,7 +1456,7 @@ render() {
 
                 <div style={{width:"100%",padding:"5%",textAlign:'center',fontSize:22}}>
                   {winnerDisplay}
-                </div>
+                </div> */}
 
 
                 {allEmojiBalances}
